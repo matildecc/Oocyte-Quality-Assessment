@@ -2,7 +2,7 @@
 """
 Created on Mon Feb 27 12:10:55 2023
 
-2nd script on the Oocyte quality estimator - center cropping the images, with the pre-located oocyte center
+2nd script on the Oocyte quality estimator - image center cropping, using the pre-located oocyte center
 
 @author: Matilde
 """
