@@ -20,17 +20,17 @@ results show that our proposed solution is more robust and objective than specia
 
 By this time, you should have your pre-processing complete (oocyte center location + center cropping)
 
-4. Run 'OocyteCompetenceAssessment.py´ to train the model with the dataset (please pay attention to the comments)
-5. For testing, you should comment the training section of the py file and uncomment the testing section. 
+6. Run 'OocyteCompetenceAssessment.py´ to train the model with the dataset (please pay attention to the comments)
+7. For testing, you should comment the training section of the py file and uncomment the testing section. 
 
 
-**Alternative:** 
+**EXTRA:** 
 To an extra pre-processing, you can run the file 'Reinhard.py' after center cropping (5.), to normalize the dataset color. This was just a trial, there was no evident benefit of this step.
 
 
 **FastRunning:** 
-Instead of 1.- 4., you can download from the drive's shared link the images with the label of their oocyte center coordinates. Do not forget to save this images in the folder 'images with center' and create an empty one named ''center cropped images'. 
-Afterwards, you just need to perform step 5.
+Instead of 1.- 4., you can download from the drive's shared link the images already cropped. Do not forget to save this images in the folder 'center cropped images' inside the folder 'database - immature'. 
+Afterwards, you just need to perform step 6.-7..
 
 
 
