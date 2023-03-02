@@ -10,7 +10,7 @@ and their label of whether they developed into blastocysts after fertilization. 
 results show that our proposed solution is more robust and objective than specialists’ visual assessment and comparable with other works on human oocytes.
 
 
-**How to run**
+**How to run:**
 
 1. Download dataset from the drive´s shared link of the .txt file 
 2. Create a folder with the name 'original images' inside the folder 'database - immature' and save the downloaded images.
