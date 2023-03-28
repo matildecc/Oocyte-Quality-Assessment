@@ -43,7 +43,7 @@ class ImageDataset(Dataset):
     self.transform=transform
     self.img_folder=img_folder
     self.image_names = self.df[:]['image_name']
-    self.labels = torch.Tensor(np.array(self.df[:]['Blastocyst Day8']))
+    self.labels = torch.Tensor(np.array(self.df[:]['Blastocyst Day8']).astype('uint8'))
    
 #The __len__ function returns the number of samples in our dataset.
   def __len__(self):
@@ -319,8 +319,8 @@ for path in os.listdir(source_path):
 #select the images accpeted by AR
 new_df = df[(df["Accepted_AR (Y/N)"] == 'Y')]
 
-new_df_class_1 = new_df[(new_df['Blastocyst Day8'] == 1)] #competent oocytes
-new_df_class_0 = new_df[new_df['Blastocyst Day8'] == 0] #non-competent oocytes
+new_df_class_1 = new_df[(new_df['Blastocyst Day8'] == '1')] #competent oocytes
+new_df_class_0 = new_df[new_df['Blastocyst Day8'] == '0'] #non-competent oocytes
 
 #Training : 70% of images
 num_class_1_train = round(0.70*len(new_df_class_1))
